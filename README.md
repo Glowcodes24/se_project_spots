@@ -17,4 +17,4 @@ This is a webpage where users are able to create a personal profile displaying a
 
 This webpage was deployed to Github Pages
 
--Deployment Link
+-[Deployment Link](https://glowcodes24.github.io/se_project_spots/)
