@@ -13,7 +13,7 @@
       content="photos, pictures, upload, friends, share, social, media"
     />
     <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="shortcut icon" href="../se_project_spots/favicon.ico" />
+    <link rel="shortcut icon" href="./favicon.ico" />
     <title>Spots</title>
   </head>
   <body>
@@ -35,20 +35,24 @@
           <div class="profile__section">
             <h1 class="profile__name">Bessie Coleman</h1>
             <p class="profile__description">Civil Aviator</p>
-            <button type="button" class="profile__button-secondary">
+            <div class="profile__button-secondary">
               <img
                 src="./images/spots-images/edit-icon.svg"
                 alt="photo of pencil"
                 class="profile__button-secondary-icon"
-              />Edit Profile
-            </button>
+              />
+              <button type="button" class="profile__button-secondary-text">
+                Edit Profile
+              </button>
+            </div>
           </div>
           <button type="button" class="profile__button-large">
             <img
               src="./images/spots-images/plus-icon.svg"
               alt="photo of plus sign"
               class="profile__button-large-icon"
-            />New Post
+            />
+            New Post
           </button>
         </section>
         <section class="cards">
@@ -125,7 +129,7 @@
         </section>
       </main>
       <footer class="footer">
-        <h2 class="footer__copyright">2025 © Spots</h2>
+        <p class="footer__copyright">2025 © Spots</p>
       </footer>
     </div>
   </body>

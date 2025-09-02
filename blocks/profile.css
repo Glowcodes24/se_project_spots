@@ -37,6 +37,7 @@
   margin: 0;
   font-size: 16px;
   font-weight: 500;
+  line-height: 100%;
   color: rgba(33, 33, 33, 0.7);
   display: -webkit-box;
   overflow: hidden;
@@ -47,12 +48,13 @@
 }
 
 .profile__button-secondary {
+  display: flex;
+  gap: 8px;
   margin-top: auto;
   border: none;
   background-color: transparent;
   padding: 0;
-  opacity: 40%;
-  font-size: 16px;
+  opacity: 70%;
 }
 
 .profile__button-secondary:hover {
@@ -60,11 +62,20 @@
   cursor: pointer;
 }
 
+.profile__button-secondary-text {
+  font-size: 16px;
+  line-height: 100%;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
 .profile__button-large {
   background-color: #212121;
-  color: #fff;
+  color: #fcf5e5;
   margin-left: auto;
-  padding: 18px 24px 18px 32px;
+  padding: 18px 32px;
+  border: none;
   border-radius: 8px;
   align-self: flex-end;
   font-size: 16px;
