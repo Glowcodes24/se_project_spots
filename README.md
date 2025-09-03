@@ -13,6 +13,12 @@ This is a webpage where users are able to create a personal profile displaying a
 -Responsive Design
 -Figma
 
+## Video
+
+This is a video descriping the technologies used to build the webpage and the reasons why they were used.
+
+[Video Link](https://drive.google.com/file/d/1E4BUSCVuhsBfnJvvWf-1N3qiY4Z0ksnM/view?usp=drive_link)
+
 ## Deployment
 
 This webpage was deployed to Github Pages
