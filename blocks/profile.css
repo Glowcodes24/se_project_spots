@@ -11,7 +11,7 @@
   width: 190px;
   height: 190px;
   margin-right: 20px;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .profile__section {
@@ -55,6 +55,10 @@
   background-color: transparent;
   padding: 0;
   opacity: 70%;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+  border: none;
 }
 
 .profile__button-secondary:hover {
@@ -62,15 +66,10 @@
   cursor: pointer;
 }
 
-.profile__button-secondary-text {
-  font-size: 16px;
-  line-height: 100%;
-  border: none;
-  background-color: transparent;
-  padding: 0;
-}
-
 .profile__button-large {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #212121;
   color: #fcf5e5;
   margin-left: auto;
@@ -83,7 +82,7 @@
 }
 
 .profile__button-large:hover {
-  opacity: 40%;
+  opacity: 80%;
   cursor: pointer;
 }
 
