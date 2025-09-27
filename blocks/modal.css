@@ -38,12 +38,12 @@
   opacity: 40%;
   border: none;
   color: #212121;
+  background-color: transparent;
 }
 
 .modal__close-button:hover {
   cursor: pointer;
   opacity: 100%;
-  background-color: transparent;
 }
 
 .modal__title {
@@ -89,6 +89,7 @@
 }
 
 .modal__save-button {
+  border: none;
   background-color: #212121;
   max-width: 156px;
   width: 100%;
@@ -101,11 +102,15 @@
 }
 
 .modal__save-button:hover {
-  opacity: 100%;
+  opacity: 80%;
   cursor: pointer;
 }
 
 @media screen and (max-width: 630px) {
+  .modal__container {
+    padding: 22px 12px 12px;
+  }
+
   .modal__title {
     font-size: 20px;
   }
@@ -117,5 +122,10 @@
   .modal__save-button {
     width: 100%;
     max-width: none;
+  }
+
+  .modal__close-button {
+    top: 12px;
+    right: 12px;
   }
 }
