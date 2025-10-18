@@ -11,7 +11,11 @@
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 10px;
+  padding: 0 10px;
+}
+
+.modal_type_preview {
+  padding: 0 16px;
 }
 
 .modal_is-opened {
@@ -39,6 +43,22 @@
   border: none;
   color: #212121;
   background-color: transparent;
+}
+
+.modal__close-button-type-preview {
+  background-image: url(../images/spots-images/whiteclose.svg);
+  color: #fff;
+  top: 0;
+  right: -52.5px;
+  opacity: 100%;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+}
+
+.modal__close-button-type-preview:hover {
+  opacity: 40%;
+  cursor: pointer;
 }
 
 .modal__close-button:hover {
@@ -106,6 +126,30 @@
   cursor: pointer;
 }
 
+.modal__image-container {
+  position: relative;
+}
+
+.modal__image {
+  max-width: 80vw;
+  max-height: 80vh;
+  width: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 8px;
+}
+
+.modal__caption {
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  width: 198px;
+  height: 24px;
+  background-color: #212121;
+  border-radius: 8px;
+  padding: 4px 8px;
+}
 @media screen and (max-width: 630px) {
   .modal__container {
     padding: 22px 12px 12px;
@@ -127,5 +171,13 @@
   .modal__close-button {
     top: 12px;
     right: 12px;
+  }
+}
+
+@media screen and (max-width: 672px) {
+  .modal__close-button-type-preview {
+    top: -48px;
+    right: 0;
+    max-width: unset;
   }
 }
