@@ -14,7 +14,7 @@
   padding: 0 10px;
 }
 
-.modal_type_preview {
+.modal__type_preview {
   padding: 0 16px;
 }
 
@@ -81,7 +81,7 @@
 .modal__label {
   font-weight: 500;
   font-size: 16px;
-  line-height: 110.00000000000001%;
+  line-height: 110%;
   margin-bottom: 8px;
 }
 
@@ -172,9 +172,11 @@
     top: 12px;
     right: 12px;
   }
-}
 
-@media screen and (max-width: 672px) {
+  .modal__caption {
+    font-size: 16px;
+  }
+
   .modal__close-button-type-preview {
     top: -48px;
     right: 0;
