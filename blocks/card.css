@@ -37,12 +37,12 @@
   right: 10px;
   border: none;
   background-color: transparent;
-  opacity: 40%;
+  opacity: 100%;
 }
 
 .card__delete-button:hover {
-  background-image: url(../images/spots-images/deletehover.svg);
-  opacity: 100%;
+  color: #fff;
+  opacity: 40%;
   cursor: pointer;
 }
 
