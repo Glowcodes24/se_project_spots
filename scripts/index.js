@@ -91,6 +91,10 @@ function getCardElement(data) {
     openModal(modalPreviewImage);
   });
 
+  modalPreviewCloseBtn.addEventListener("click", () => {
+    closeModal(modalPreviewImage);
+  });
+
   return cardElement;
 }
 
