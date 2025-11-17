@@ -53,14 +53,14 @@
   border: none;
   background-color: transparent;
   padding: 0;
-  opacity: 70%;
+  opacity: 0.7;
   font-size: 16px;
   font-weight: 500;
   line-height: 100%;
 }
 
 .profile__button-secondary:hover {
-  opacity: 100%;
+  opacity: 1;
   cursor: pointer;
 }
 
@@ -80,7 +80,7 @@
 }
 
 .profile__button-large:hover {
-  opacity: 80%;
+  opacity: 0.8;
   cursor: pointer;
 }
 

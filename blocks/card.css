@@ -37,12 +37,12 @@
   right: 10px;
   border: none;
   background-color: transparent;
-  opacity: 100%;
+  opacity: 1;
 }
 
 .card__delete-button:hover {
   color: #fff;
-  opacity: 40%;
+  opacity: 0.4;
   cursor: pointer;
 }
 
@@ -52,11 +52,11 @@
   height: 20px;
   border: none;
   background-color: transparent;
-  opacity: 40%;
+  opacity: 0.4;
 }
 
 .card__like-button:hover {
-  opacity: 100%;
+  opacity: 1;
   cursor: pointer;
 }
 
