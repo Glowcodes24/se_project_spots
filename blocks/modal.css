@@ -82,7 +82,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 110%;
-  margin-bottom: 8px;
+  margin-bottom: 32px;
 }
 
 .modal__input {
@@ -92,7 +92,11 @@
   border: 1px solid rgba(33, 33, 33, 0.4);
   border-radius: 8px;
   padding: 16px 12px;
-  margin-bottom: 32px;
+  margin-bottom: 8px;
+}
+
+.modal__input_type_error {
+  border: 1px solid rgba(255, 0, 0, 0.6);
 }
 
 .modal__input:hover {
@@ -108,6 +112,11 @@
   opacity: 30%;
 }
 
+.modal__error {
+  color: rgba(255, 0, 0, 0.7);
+  font-size: 16px;
+}
+
 .modal__save-button {
   border: none;
   background-color: #212121;
@@ -119,6 +128,10 @@
   font-size: 16px;
   line-height: 100%;
   color: #fcf5e5;
+}
+
+.modal__save-button_inactive {
+  background-color: rgba(33, 33, 33, 0.5);
 }
 
 .modal__save-button:hover {

@@ -48,6 +48,7 @@ const editProfileForm = editProfileModal.querySelector(".modal__form");
 
 const newPostButton = document.querySelector(".profile__button-large");
 const newPostModal = document.querySelector("#new-post-modal");
+const newPostSubmitButton = newPostModal.querySelector(".modal__save-button");
 const newPostCloseButton = newPostModal.querySelector(".modal__close-button");
 const newPostForm = newPostModal.querySelector(".modal__form");
 const newPostLinkInput = newPostModal.querySelector("#image-link-input");
@@ -149,6 +150,7 @@ function handleNewPostFormSubmit(evt) {
   cardsList.prepend(cardElement);
   closeModal(newPostModal);
   newPostForm.reset();
+  disabledButton(newPostSubmitButton, settings);
 }
 
 newPostForm.addEventListener("submit", handleNewPostFormSubmit);

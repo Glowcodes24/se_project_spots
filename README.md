@@ -15,9 +15,12 @@ This is a webpage where users are able to create a personal profile displaying a
 
 ## Video
 
-This is a video descriping the technologies used to build the webpage and the reasons why they were used.
+Check out these videos, where I describe my project
+and some challenges I faced while building it:
 
 [Video Link](https://drive.google.com/file/d/1E4BUSCVuhsBfnJvvWf-1N3qiY4Z0ksnM/view?usp=drive_link)
+
+[Project Pitch Spots Stage 9] https://drive.google.com/file/d/1Tr8dwYt_bKbScR0IKEGkJWT0HsAs8cG4/view?usp=sharing
 
 ## Deployment
 
