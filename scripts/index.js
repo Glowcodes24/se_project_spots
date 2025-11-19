@@ -136,6 +136,7 @@ modalPreviewCloseBtn.addEventListener("click", function () {
 });
 
 newPostButton.addEventListener("click", function () {
+  resetValidation(newPostForm, settings);
   openModal(newPostModal);
 });
 
