@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -12,32 +12,39 @@
       name="keywords"
       content="photos, pictures, upload, friends, share, social, media"
     />
-    <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="shortcut icon" href="./favicon.ico" />
     <title>Spots</title>
   </head>
   <body>
     <div class="page">
       <header class="header">
         <img
-          src="./images/spots-images/logo.svg"
+          src="<%=require('./images/spots-images/logo.svg')%>"
           alt="photo of spots logo"
           class="header__logo"
         />
       </header>
       <main class="content">
         <section class="profile">
-          <img
-            src="./images/spots-images/avatar.jpg"
-            alt="photo of Bessie Coleman avatar"
-            class="profile__avatar"
-          />
+          <div class="profile__avatar-container">
+            <button class="profile__avatar-button">
+              <img
+                src="<%=require('./images/spots-images/edit avatar pencil.svg')%>"
+                alt="edit avatar pencil"
+                class="profile__pencil-icon"
+              />
+            </button>
+            <img
+              src="<%=require('./images/spots-images/avatar.jpg')%>"
+              alt="photo of Bessie Coleman avatar"
+              class="profile__avatar"
+            />
+          </div>
           <div class="profile__section">
             <h1 class="profile__name">Bessie Coleman</h1>
             <p class="profile__description">Civil Aviator</p>
             <button type="button" class="profile__button-secondary">
               <img
-                src="./images/spots-images/edit-icon.svg"
+                src="<%=require('./images/spots-images/edit-icon.svg')%>"
                 alt="photo of pencil"
                 class="profile__button-secondary-icon"
               />Edit Profile
@@ -45,7 +52,7 @@
           </div>
           <button type="button" class="profile__button-large">
             <img
-              src="./images/spots-images/plus-icon.svg"
+              src="<%=require('./images/spots-images/plus-icon.svg')%>"
               alt="photo of plus sign"
               class="profile__button-large-icon"
             />
@@ -73,7 +80,10 @@
       <div class="modal" id="edit-profile-modal">
         <div class="modal__container">
           <button type="button" class="modal__close-button">
-            <img src="./images/close-icon.svg" alt="X image for closing form" />
+            <img
+              src="<%=require('./images/close-icon.svg')%>"
+              alt="X image for closing form"
+            />
           </button>
           <h2 class="modal__title">Edit profile</h2>
           <form class="modal__form" novalidate>
@@ -113,7 +123,10 @@
       <div class="modal" id="new-post-modal">
         <div class="modal__container">
           <button type="button" class="modal__close-button">
-            <img src="./images/close-icon.svg" alt="X image for closing form" />
+            <img
+              src="<%=require('./images/close-icon.svg')%>"
+              alt="X image for closing form"
+            />
           </button>
           <h2 class="modal__title">New post</h2>
           <form class="modal__form" novalidate>
@@ -155,8 +168,62 @@
           <p class="modal__caption"></p>
         </div>
       </div>
+      <div class="modal" id="avatar-modal">
+        <div class="modal__container">
+          <button type="button" class="avatar__close-button">
+            <img
+              src="<%=require('./images/close-icon.svg')%>"
+              alt="X image for closing form"
+            />
+          </button>
+          <h2 class="modal__title">Edit profile avatar</h2>
+          <form class="modal__form" novalidate>
+            <label for="avatar-link-input" class="modal__label">
+              Profile Picture
+              <input
+                id="avatar-link-input"
+                type="url"
+                class="modal__input"
+                placeholder="Paste the link to an image"
+                required
+              />
+              <span id="avatar-link-input-error" class="modal__error"></span>
+            </label>
+
+            <button type="submit" class="modal__save-button">Save</button>
+          </form>
+        </div>
+      </div>
+      <div class="modal modal_type_delete" id="delete-modal">
+        <div class="modal__container">
+          <button
+            type="button"
+            class="modal__close-button modal__close-button_type_delete"
+          >
+            <img
+              src="<%=require('./images/spots-images/whiteclose.svg')%>"
+              alt="X image for closing form"
+            />
+          </button>
+          <h2 class="modal__title modal__title_type_delete">
+            Are you sure you want to delete this image?
+          </h2>
+          <form class="modal__form modal__form_type_delete" id="delete-form">
+            <button
+              type="submit"
+              class="modal__save-button modal__save-button_type_delete"
+            >
+              Delete
+            </button>
+            <button
+              type="button"
+              class="modal__save-button modal__save-button_type_cancel"
+            >
+              Cancel
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
-    <script src="./scripts/validation.js"></script>
-    <script src="./scripts/index.js"></script>
   </body>
 </html>
