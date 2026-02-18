@@ -168,16 +168,21 @@
           <p class="modal__caption"></p>
         </div>
       </div>
-      <div class="modal" id="avatar-modal">
+      <div class="modal modal_type_avatar" id="avatar-modal">
         <div class="modal__container">
-          <button type="button" class="avatar__close-button">
+          <button
+            type="button"
+            class="modal__close-button modal__close-button-type-avatar"
+          >
             <img
               src="<%=require('./images/close-icon.svg')%>"
               alt="X image for closing form"
             />
           </button>
-          <h2 class="modal__title">Edit profile avatar</h2>
-          <form class="modal__form" novalidate>
+          <h2 class="modal__title modal__title_type_avatar">
+            Edit profile avatar
+          </h2>
+          <form class="modal__form modal__form_type_avatar" novalidate>
             <label for="avatar-link-input" class="modal__label">
               Profile Picture
               <input
@@ -190,7 +195,12 @@
               <span id="avatar-link-input-error" class="modal__error"></span>
             </label>
 
-            <button type="submit" class="modal__save-button">Save</button>
+            <button
+              type="submit"
+              class="modal__save-button modal__save-button_type_avatar"
+            >
+              Save
+            </button>
           </form>
         </div>
       </div>

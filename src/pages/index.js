@@ -95,7 +95,9 @@ const avatarButton = document.querySelector(".profile__avatar-button");
 const avatarModal = document.querySelector("#avatar-modal");
 const avatarForm = avatarModal.querySelector(".modal__form");
 const avatarInput = avatarModal.querySelector("#avatar-link-input");
-const avatarCloseButton = avatarModal.querySelector(".avatar__close-button");
+const avatarCloseButton = avatarModal.querySelector(
+  ".modal__close-button.modal__close-button-type-avatar",
+);
 
 const deleteModal = document.querySelector("#delete-modal");
 const deleteForm = deleteModal.querySelector(".modal__form");
@@ -160,6 +162,12 @@ const deleteCloseButton = deleteModal.querySelector(
 );
 
 deleteCloseButton.addEventListener("click", () => closeModal(deleteModal));
+
+const deleteCancelButton = deleteModal.querySelector(
+  ".modal__save-button.modal__save-button_type_cancel",
+);
+
+deleteCancelButton.addEventListener("click", () => closeModal(deleteModal));
 
 function handleEscape(evt) {
   if (evt.key === "Escape")
@@ -311,7 +319,7 @@ function handleNewPostFormSubmit(evt) {
     })
     .catch(console.error)
     .finally(() => {
-      setButtonText(submitButton, true);
+      setButtonText(submitButton, false);
     });
 }
 newPostForm.addEventListener("submit", handleNewPostFormSubmit);
