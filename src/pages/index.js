@@ -135,10 +135,6 @@ function getCardElement(data) {
     handleLikeStatus(evt, data._id),
   );
 
-  const deleteCloseButton = deleteModal.querySelector(
-    ".modal__close-button_type_delete",
-  );
-  deleteCloseButton.addEventListener("click", () => closeModal(deleteModal));
   const deleteButton = cardElement.querySelector(".card__delete-button");
 
   deleteButton.addEventListener("click", () =>
@@ -152,12 +148,18 @@ function getCardElement(data) {
     openModal(modalPreviewImage);
   });
 
-  modalPreviewCloseButton.addEventListener("click", () => {
-    closeModal(modalPreviewImage);
-  });
-
   return cardElement;
 }
+
+modalPreviewCloseButton.addEventListener("click", () => {
+  closeModal(modalPreviewImage);
+});
+
+const deleteCloseButton = deleteModal.querySelector(
+  ".modal__close-button_type_delete",
+);
+
+deleteCloseButton.addEventListener("click", () => closeModal(deleteModal));
 
 function handleEscape(evt) {
   if (evt.key === "Escape")
@@ -217,7 +219,7 @@ function handleEditProfileFormSubmit(evt) {
     })
     .catch(console.error)
     .finally(() => {
-      setButtonText(submitButton, true);
+      setButtonText(submitButton, false);
     });
 }
 
@@ -238,7 +240,7 @@ function handleAvatarFormSubmit(evt) {
     })
     .catch(console.error)
     .finally(() => {
-      setButtonText(submitButton, true);
+      setButtonText(submitButton, false);
     });
 }
 avatarButton.addEventListener("click", () => {
@@ -268,7 +270,7 @@ function handleDeleteSubmit(evt) {
     })
     .catch(console.error)
     .finally(() => {
-      setButtonText(submitButton, true);
+      setButtonText(submitButton, false, "Delete", "Deleting...");
     });
 }
 
